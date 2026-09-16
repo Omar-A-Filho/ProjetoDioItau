@@ -13,15 +13,22 @@ public class UsuarioBase {
     }
 
     public void login() {
+        System.out.println("Login com sucesso!");
     }
 
     public void logout() {
+        System.out.println("Logout com sucesso!");
     }
 
-    public void alterarDados() {
+    public void alterarDados(String novoNome, String novoEmail) {
+        this.nome = novoNome;
+        this.email = novoEmail;
+        System.out.println("Dados alterados com sucesso!");
     }
 
-    public void alterarSenha() {
+    public void alterarSenha(String novaSenha) {
+        this.senha = novaSenha;
+        System.out.println("Senha alterada com sucesso!");
     }
 
     public String getNome() {
