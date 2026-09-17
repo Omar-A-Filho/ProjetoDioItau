@@ -19,19 +19,19 @@ public class Aplicativo {
 
         switch (numeroCanal) {
             case 1:
-                canal = new CanalSms();
+                canal = msg -> System.out.println("Enviando via SMS: " + msg);
                 canal.enviarMensagem(mensagemGeral);
                 break;
             case 2:
-                canal = new CanalEmail();
+                canal = msg -> System.out.println("Enviando via E-mail: " + msg);
                 canal.enviarMensagem(mensagemGeral);
                 break;
             case 3:
-                canal = new CanalWhatsApp();
+                canal = msg -> System.out.println("Enviando via WhatsApp: " + msg);
                 canal.enviarMensagem(mensagemGeral);
                 break;
             case 4:
-                canal = new CanalRedesSociais();
+                canal = msg -> System.out.println("Enviando via Redes Sociais: " + msg);
                 canal.enviarMensagem(mensagemGeral);
                 break;
             default:
