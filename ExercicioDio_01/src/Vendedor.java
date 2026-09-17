@@ -7,7 +7,7 @@ public class Vendedor extends UsuarioBase implements ConsultorDeVendas {
         this.quantidadeDeVendas = 0;
     }
 
-    public void realizarVendas() {
+    public void realizarVenda() {
         this.quantidadeDeVendas++;
         System.out.println("Venda realizada com sucesso!");
     }
